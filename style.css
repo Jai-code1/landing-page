@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+ul {
+    list-style: none;
+    /* revisit this later
+    padding: 0;
+    margin: 0; */
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.info {
+    display: flex;
+    /* max-width: 200px; might need to change later */
+    justify-content: left;
+    gap: 52px;    
+}
