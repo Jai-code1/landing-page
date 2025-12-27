@@ -8,6 +8,11 @@ body {
 }
 
 
+/*******************************************/
+/************* header **********************/
+/*******************************************/
+
+
 .header {
     display: flex;
     align-items: center;
@@ -40,21 +45,62 @@ a {
 }
 
 
+/*******************************************/
+/************* Container1 ******************/
+/*******************************************/
+
+
 .container1 {
-    background-color: aqua;
+    background-color: #1F2937;
     display: flex;
-    flex: 1; 
+    flex: 1; /* right now this growing in the vertical direction, might need it to grow in the horizontal */
     /*need this but need to add flex to other containers first bc. acting weird w/o doing that first */
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section1-title {
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.text1 {
+    color: #e5e7eb;
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+button.signup1 {
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
 }
 
 .info {
     /* display: flex; dont need since container is flex */
-    /* background-color: red; */
+    background-color: #1F2937;
+    /* set a width here, see if that works for making the "awesome go to the next line" */
+    max-width: 450px;
 }
 
 .img1 {
-    /* display: flex; dont need since parent container is flex */
+    background: url(https://www.freepik.com/free-vector/simple-vibing-cat-square-meme_58459053.htm); 
+    /* Image provided by: Wepik on Freepik, link --> https://www.freepik.com/free-vector/simple-vibing-cat-square-meme_58459053.html */
+
 }
+
+
+/*******************************************/
+/************* Container2 ******************/
+/*******************************************/
 
 
 .container2 {
@@ -64,6 +110,11 @@ a {
 }
 
 
+/*******************************************/
+/************* Container3 ******************/
+/*******************************************/
+
+
 .container3 {
     background-color: peru;
     flex: 1;
@@ -71,11 +122,21 @@ a {
 }
 
 
+/*******************************************/
+/************* Container4 ******************/
+/*******************************************/
+
+
 .container4 {
     background-color: yellow;
     flex: 1;
     display: flex;
 }
+
+
+/*******************************************/
+/************* footer **********************/
+/*******************************************/
 
 
 .footer {
