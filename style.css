@@ -53,11 +53,12 @@ a {
 .container1 {
     background-color: #1F2937;
     display: flex;
-    flex: 1; /* right now this growing in the vertical direction, might need it to grow in the horizontal */
+    /* flex: 1; right now this growing in the vertical direction, might need it to grow in the horizontal */
     /*need this but need to add flex to other containers first bc. acting weird w/o doing that first */
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 50px;
 }
 
 .section1-title {
@@ -69,12 +70,12 @@ a {
 .text1 {
     color: #e5e7eb;
     font-size: 18px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 button {
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px 25px;
   border-radius: 8px;
 }
 
@@ -82,6 +83,7 @@ button.signup1 {
     background: royalblue;
     border: 1px solid royalblue;
     color: white;
+    font-size: 18px;
 }
 
 .info {
@@ -109,12 +111,38 @@ button.signup1 {
 /*******************************************/
 
 
-.container2 {
-    background-color: blue;
-    display: flex;
-    flex: 1;
+.section-after-hero{
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+    /* display: flex; */
 }
 
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+
+.info2 {
+    max-width: 200px;
+}
+
+.section2-header {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.img2 {
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+}
+
+.text2 {
+    color: #1F2937;
+}
 
 /*******************************************/
 /************* Container3 ******************/
@@ -122,9 +150,16 @@ button.signup1 {
 
 
 .container3 {
-    background-color: peru;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    /* padding: 100px; */
     flex: 1;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.quote {
+    flex-shrink: 0;
 }
 
 
@@ -135,7 +170,7 @@ button.signup1 {
 
 .container4 {
     background-color: yellow;
-    flex: 1;
+    /* flex: 1; */
     display: flex;
 }
 
@@ -148,4 +183,5 @@ button.signup1 {
 .footer {
     background-color: #1F2937;
     color: white;
+    display: flex;
 }
