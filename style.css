@@ -4,20 +4,17 @@ body {
     overflow: hidden;
     font-family: Roboto, sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
 }
+
 
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    justify-content: space-between;
+    background-color: #1F2937;
+    color: white;
+    padding: 8px;
 }
 
 ul {
@@ -26,17 +23,62 @@ ul {
     padding: 0;
     margin: 0; */
     display: flex;
-    gap: 16px;
+    gap: 25px;
+    padding-right: 100px;
 }
 
 a {
     text-decoration: none;
-    color: brown;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-logo {
+    padding-left: 100px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.container1 {
+    background-color: aqua;
+    display: flex;
+    flex: 1; 
+    /*need this but need to add flex to other containers first bc. acting weird w/o doing that first */
 }
 
 .info {
+    /* display: flex; dont need since container is flex */
+    /* background-color: red; */
+}
+
+.img1 {
+    /* display: flex; dont need since parent container is flex */
+}
+
+
+.container2 {
+    background-color: blue;
     display: flex;
-    /* max-width: 200px; might need to change later */
-    justify-content: left;
-    gap: 52px;    
+    flex: 1;
+}
+
+
+.container3 {
+    background-color: peru;
+    flex: 1;
+    text-align: center;
+}
+
+
+.container4 {
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+}
+
+
+.footer {
+    background-color: #1F2937;
+    color: white;
 }
