@@ -53,12 +53,13 @@ a {
 .container1 {
     background-color: #1F2937;
     display: flex;
-    /* flex: 1; right now this growing in the vertical direction, might need it to grow in the horizontal */
+    flex: 3; 
+    /* ^^^right now this growing in the vertical direction, might need it to grow in the horizontal */
     /*need this but need to add flex to other containers first bc. acting weird w/o doing that first */
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .section1-title {
@@ -100,8 +101,8 @@ button.signup1 {
 }
 
 .contain-fit {
-    width: 900px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 
@@ -114,8 +115,9 @@ button.signup1 {
 .section-after-hero{
     background-color: white;
     text-align: center;
-    padding: 50px;
+    /* padding: 50px; */
     /* display: flex; */
+    flex: 1.5;
 }
 
 .container2 {
@@ -151,15 +153,19 @@ button.signup1 {
 
 .container3 {
     background-color: #e5e7eb;
+    flex: 2;
     display: flex;
     justify-content: center;
-    /* padding: 100px; */
-    flex: 1;
-    /* text-align: center; */
+    align-items: center;
 }
 
 .quote {
-    flex-shrink: 0;
+    max-width: 300px;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bolder;
 }
 
 
@@ -169,9 +175,30 @@ button.signup1 {
 
 
 .container4 {
-    background-color: yellow;
-    /* flex: 1; */
+    background-color: white;
+    flex: 2;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action {
+    background-color: royalblue;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button.signup4 {
+    background: royalblue;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+}
+
+.info4 {
+    color: white;
 }
 
 
@@ -184,4 +211,7 @@ button.signup1 {
     background-color: #1F2937;
     color: white;
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
 }
