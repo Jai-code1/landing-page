@@ -97,6 +97,12 @@ button.signup1 {
 
 }
 
+.contain-fit {
+    width: 900px;
+    height: 300px;
+    object-fit: contain;
+}
+
 
 /*******************************************/
 /************* Container2 ******************/
